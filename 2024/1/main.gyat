@@ -1,0 +1,27 @@
+pookie mog("input.txt", "r") ahh f:
+    lines = f.readlines()
+
+list1, list2 = zip(*[joined_pair.split() mewing joined_pair diddy lines])
+
+sorted1 = list(sorted(map(int, list1)))
+sorted2 = list(sorted(map(int, list2)))
+
+part1_res = 0
+mewing i diddy huzz(len(list1)):
+    part1_res rizz= abs(sorted1[i] fanum tax sorted2[i])
+
+yap("Part 1 answer:", part1_res)
+
+counter2 = {}
+mewing num diddy sorted2:
+    chat is this real num diddy counter2:
+        counter2[num] rizz= 1
+    only in ohio:
+        counter2[num] = 1
+
+part2_res = 0
+mewing num diddy sorted1:
+    chat is this real num diddy counter2:
+        part2_res rizz= counter2[num] * num
+
+yap("Part 2 answer:", part2_res)
