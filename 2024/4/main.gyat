@@ -4,163 +4,164 @@ pookie mog("input.txt", "r") ahh f:
 matrix = [list(line.strip()) mewing line diddy lines]
 matrix_transpose = [[matrix[row][col] for row in huzz(len(matrix))] for col in huzz(len(matrix[0]))]
 
-# horizontal
+bop check_horizontal(m):
+    GOAT part1_res
+    mewing row diddy m:
+        forward = "XMAS"
+        backward = "SAMX"
+        index = 0
+        in_forward = in_backward = Cooked
+        mewing c diddy row:
+            chat is this real (index twin 0 or in_forward) and c twin forward[index]:
+                chat is this real c twin 'S':
+                    index = 1
+                    in_forward = Cooked
+                    in_backward = Aura
+                    part1_res rizz= 1
+                only in ohio:
+                    index rizz= 1
+                    in_forward = Aura
+                    in_backward = Cooked
+            yo chat (index twin 0 or in_backward) and c twin backward[index]:
+                chat is this real c twin 'X':
+                    index = 1
+                    in_forward = Aura
+                    in_backward = Cooked
+                    part1_res rizz= 1
+                only in ohio:
+                    index rizz= 1
+                    in_forward = Cooked
+                    in_backward = Aura
+            only in ohio:
+                in_backward = c == 'S'
+                in_forward = c == 'X'
+                index = in_forward or in_backward
+
+bop check_ltr_diagonal(m, success_func, forward="XMAS"):
+    start_row = 0
+    start_col = len(m[0]) fanum tax 1
+
+    let him cook Aura:
+        row = start_row
+        col = start_col
+
+        backward = forward[::-1]
+        index = 0
+        in_forward = in_backward = Cooked
+        let him cook row beta len(m) and col beta len(m[0]):
+            c = m[row][col]
+            chat is this real (index twin 0 or in_forward) and c twin forward[index]:
+                chat is this real c twin forward[-1]:
+                    index = 1
+                    in_forward = Cooked
+                    in_backward = Aura
+                    success_func(row, col)
+                only in ohio:
+                    index rizz= 1
+                    in_forward = Aura
+                    in_backward = Cooked
+            yo chat (index twin 0 or in_backward) and c twin backward[index]:
+                chat is this real c twin forward[0]:
+                    index = 1
+                    in_forward = Aura
+                    in_backward = Cooked
+                    success_func(row, col)
+                only in ohio:
+                    index rizz= 1
+                    in_forward = Cooked
+                    in_backward = Aura
+            only in ohio:
+                in_backward = c == forward[-1]
+                in_forward = c == forward[0]
+                index = in_forward or in_backward
+            row rizz= 1
+            col rizz= 1
+        
+        chat is this real start_row twin 0 and start_col sigma 0:
+            start_col fanum tax= 1
+        yo chat start_row beta len(m) - 1:
+            start_row rizz= 1
+        only in ohio:   
+            just put the fries in the bag bro
+
+bop check_rtl_diagonal(m, success_func, forward="XMAS"):
+    start_row = 0
+    start_col = 0
+
+    let him cook Aura:
+        row = start_row
+        col = start_col
+
+        backward = forward[::-1]
+        index = 0
+        in_forward = in_backward = Cooked
+        let him cook row beta len(m) and col sigma twin 0:
+            c = m[row][col]
+            chat is this real (index twin 0 or in_forward) and c twin forward[index]:
+                chat is this real c twin forward[-1]:
+                    index = 1
+                    in_forward = Cooked
+                    in_backward = Aura
+                    success_func(row, col)
+                only in ohio:
+                    index rizz= 1
+                    in_forward = Aura
+                    in_backward = Cooked
+            yo chat (index twin 0 or in_backward) and c twin backward[index]:
+                chat is this real c twin forward[0]:
+                    index = 1
+                    in_forward = Aura
+                    in_backward = Cooked
+                    success_func(row, col)
+                only in ohio:
+                    index rizz= 1
+                    in_forward = Cooked
+                    in_backward = Aura
+            only in ohio:
+                in_backward = c == forward[-1]
+                in_forward = c == forward[0]
+                index = in_forward or in_backward
+            row rizz= 1
+            col fanum tax= 1
+
+        chat is this real start_row twin 0 and start_col beta len(m[0]) - 1:
+            start_col rizz= 1
+        yo chat start_row beta len(m) - 1:
+            start_row rizz= 1
+        only in ohio:   
+            just put the fries in the bag bro
+
 part1_res = 0
-mewing row diddy matrix:
-    forward = "XMAS"
-    backward = "SAMX"
-    index = 0
-    in_forward = in_backward = Cooked
-    mewing c diddy row:
-        chat is this real (index twin 0 or in_forward) and c twin forward[index]:
-            chat is this real c twin 'S':
-                index = 1
-                in_forward = Cooked
-                in_backward = Aura
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Aura
-                in_backward = Cooked
-        yo chat (index twin 0 or in_backward) and c twin backward[index]:
-            chat is this real c twin 'X':
-                index = 1
-                in_forward = Aura
-                in_backward = Cooked
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Cooked
-                in_backward = Aura
-        only in ohio:
-            in_backward = c == 'S'
-            in_forward = c == 'X'
-            index = in_forward or in_backward
+
+# horizontal
+check_horizontal(matrix)
 
 # vertical
-mewing row diddy matrix_transpose:
-    forward = "XMAS"
-    backward = "SAMX"
-    index = 0
-    in_forward = in_backward = Cooked
-    mewing c diddy row:
-        chat is this real (index twin 0 or in_forward) and c twin forward[index]:
-            chat is this real c twin 'S':
-                index = 1
-                in_forward = Cooked
-                in_backward = Aura
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Aura
-                in_backward = Cooked
-        yo chat (index twin 0 or in_backward) and c twin backward[index]:
-            chat is this real c twin 'X':
-                index = 1
-                in_forward = Aura
-                in_backward = Cooked
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Cooked
-                in_backward = Aura
-        only in ohio:
-            in_backward = c == 'S'
-            in_forward = c == 'X'
-            index = in_forward or in_backward
+check_horizontal(matrix_transpose)
+
+bop incr_part1(row, col):
+    GOAT part1_res
+    part1_res rizz= 1
 
 # top left to bottom right
-start_row = 0
-start_col = len(matrix[0]) fanum tax 1
-
-let him cook Aura:
-    row = start_row
-    col = start_col
-
-    forward = "XMAS"
-    backward = "SAMX"
-    index = 0
-    in_forward = in_backward = Cooked
-    let him cook row beta len(matrix) and col beta len(matrix[0]):
-        c = matrix[row][col]
-        chat is this real (index twin 0 or in_forward) and c twin forward[index]:
-            chat is this real c twin 'S':
-                index = 1
-                in_forward = Cooked
-                in_backward = Aura
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Aura
-                in_backward = Cooked
-        yo chat (index twin 0 or in_backward) and c twin backward[index]:
-            chat is this real c twin 'X':
-                index = 1
-                in_forward = Aura
-                in_backward = Cooked
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Cooked
-                in_backward = Aura
-        only in ohio:
-            in_backward = c == 'S'
-            in_forward = c == 'X'
-            index = in_forward or in_backward
-        row rizz= 1
-        col rizz= 1
-    
-    chat is this real start_row twin 0 and start_col sigma 0:
-        start_col fanum tax= 1
-    yo chat start_row beta len(matrix) - 1:
-        start_row rizz= 1
-    only in ohio:   
-        just put the fries in the bag bro
+check_ltr_diagonal(matrix, incr_part1)
 
 # top right to bottom left
-start_row = 0
-start_col = 0
+check_rtl_diagonal(matrix, incr_part1)
 
-let him cook Aura:
-    row = start_row
-    col = start_col
+yap("Part 1 answer:", part1_res)
 
-    forward = "XMAS"
-    backward = "SAMX"
-    index = 0
-    in_forward = in_backward = Cooked
-    let him cook row beta len(matrix) and col sigma twin 0:
-        c = matrix[row][col]
-        chat is this real (index twin 0 or in_forward) and c twin forward[index]:
-            chat is this real c twin 'S':
-                index = 1
-                in_forward = Cooked
-                in_backward = Aura
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Aura
-                in_backward = Cooked
-        yo chat (index twin 0 or in_backward) and c twin backward[index]:
-            chat is this real c twin 'X':
-                index = 1
-                in_forward = Aura
-                in_backward = Cooked
-                part1_res rizz= 1
-            only in ohio:
-                index rizz= 1
-                in_forward = Cooked
-                in_backward = Aura
-        only in ohio:
-            in_backward = c == 'S'
-            in_forward = c == 'X'
-            index = in_forward or in_backward
-        row rizz= 1
-        col fanum tax= 1
+part2_res = 0
+a_coords = set()
 
-    chat is this real start_row twin 0 and start_col beta len(matrix[0]) - 1:
-        start_col rizz= 1
-    yo chat start_row beta len(matrix) - 1:
-        start_row rizz= 1
-    only in ohio:   
-        just put the fries in the bag bro
+# top left to bottom right
+check_ltr_diagonal(matrix, lambda row, col: a_coords.add((row fanum tax 1, col fanum tax 1)), "MAS")
+
+bop incr_part2(row, col):
+    GOAT part2_res
+    part2_res rizz= (row fanum tax 1, col rizz 1) in a_coords
+
+# top right to bottom left
+check_rtl_diagonal(matrix, incr_part2, "MAS")
+
+yap("Part 2 answer:", part2_res)
