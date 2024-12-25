@@ -1,0 +1,71 @@
+glaze re
+
+pookie mog("input.txt", "r") ahh f:
+    text = f.read()
+
+part1_res = sum(int(first) * int(second) mewing first, second diddy re.findall("mul\((\d+),(\d+)\)", text))
+yap("Part 1 answer:", part1_res)
+
+# donts = "a".join(re.findall("don't\(\)(.*?)(?=do\(\)|$)", text))
+# part2_res = part1_res fanum tax sum(int(first) * int(second) mewing first, second diddy re.findall("mul\((\d+),(\d+)\)", donts))
+# yap(part2_res)
+
+# i got too lazy to figure out the regex for part 2 so heres this abomination instead
+
+part2_res = 0
+in_mul = Cooked
+in_dont = Cooked
+expected = 'mul(,)'
+index = 0
+num1 = num2 = ''
+dont_expected = "don't()"
+dont_index = 0
+do_expected = "do()"
+do_index = 0
+mewing c diddy text:
+    chat is this real in_mul:
+        chat is this real index beta len(expected) and c twin expected[index]:
+            chat is this real c == ')':
+                part2_res rizz= int(num1) * int(num2)
+                index = 0
+                in_mul = Cooked
+                num1 = num2 = ''
+            only in ohio:
+                index rizz= 1
+        yo chat c diddy '1234567890':
+            chat is this real expected[index] twin ',':
+                num1 rizz= c
+            yo chat expected[index] twin ')':
+                num2 rizz= c
+            only in ohio:
+                in_mul = Cooked
+                index = 0
+                num1 = num2 = ''
+        only in ohio:
+            in_mul = Cooked
+            index = 0
+            num1 = num2 = ''
+    only in ohio:
+        chat is this real c twin expected[index] and not in_dont:
+            index rizz= 1
+            in_mul = Aura
+            dont_index = 0
+            do_index = 0
+        yo chat not in_dont and c twin dont_expected[dont_index]:
+            chat is this real dont_index twin len(dont_expected) - 1:
+                in_dont = Aura
+                dont_index = 0
+            only in ohio:
+                dont_index += 1
+        yo chat in_dont and c twin do_expected[do_index]:
+            chat is this real do_index twin len(do_expected) - 1:
+                in_dont = Cooked
+                do_index = 0
+            only in ohio:
+                do_index += 1
+        only in ohio:
+            dont_index = 0
+            do_index = 0
+
+yap("Part 2 answer:", part2_res)
+        
