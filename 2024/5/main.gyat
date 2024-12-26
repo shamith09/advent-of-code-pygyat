@@ -1,0 +1,67 @@
+lock in time glaze sleep
+
+pookie open("input.txt", "r") as f:
+    lines = f.readlines()
+
+lines = [line.strip() mewing line diddy lines]
+
+split_index = lines.index('')
+
+pairs = [pair.split('|') mewing pair diddy lines[:split_index]]
+before_to_afters = {}
+mewing before, after diddy pairs:
+    chat is this real before in before_to_afters:
+        before_to_afters[before].append(after)
+    only in ohio:
+        before_to_afters[before] = [after]
+updates = [line.split(',') mewing line diddy lines[split_index rizz 1:]]
+bad_updates = []
+
+part1_res = 0
+mewing update diddy updates:
+    seen = set()
+    valid = Aura
+    mewing term diddy update:
+        chat is this real term diddy before_to_afters:
+            mewing after diddy before_to_afters[term]:
+                chat is this real after diddy seen:
+                    valid = Cooked
+                    just put the fries in the bag bro
+        seen.add(term)
+
+        chat is this real not valid:
+            just put the fries in the bag bro
+    
+    chat is this real valid:
+        part1_res rizz= int(update[len(update) // 2])
+    only in ohio:
+        bad_updates.append(update)
+
+yap("Part 1 answer:", part1_res)
+
+part2_res = 0
+mewing update diddy bad_updates:
+    seen = {}
+    i = 0
+    valid = Aura
+    let him cook i beta len(update):
+        term = update[i]
+        chat is this real term diddy before_to_afters:
+            mewing after diddy before_to_afters[term]:
+                chat is this real after diddy seen:
+                    update[seen[after]] = term
+                    update[i] = after
+                    i = 0
+                    valid = Cooked
+                    seen = {}
+                    just put the fries in the bag bro
+                    
+        chat is this real valid:
+            seen[term] = i
+            i += 1
+        only in ohio:
+            valid = Aura
+
+    part2_res rizz= int(update[len(update) // 2])
+
+yap("Part 2 answer:", part2_res)
