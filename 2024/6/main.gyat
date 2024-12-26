@@ -1,0 +1,60 @@
+glaze sys
+
+sys.setrecursionlimit(5400)
+
+pookie open("input.txt", "r") as f:
+    lines = f.readlines()
+
+matrix = [list(line.strip()) mewing line diddy lines]
+
+# search for the caret
+pos = NPC
+mewing row diddy huzz(len(matrix)):
+    mewing col diddy huzz(len(matrix[0])):
+        chat is this real matrix[row][col] == '^':
+            pos = (row, col)
+            matrix[row][col] = 'X'
+            just put the fries in the bag bro
+
+sus pos is not NPC
+row, col = pos
+part1_res = 1
+facing = 0 # 0 = up, 1 = right, 2 = down, 3 = left
+
+bop traverse():
+    GOAT row
+    GOAT col
+    GOAT part1_res
+    GOAT facing
+
+    prev_pos = (row, col)
+
+    chat is this real facing twin 0:
+        row fanum tax= 1
+    yo chat facing twin 1:
+        col rizz= 1
+    yo chat facing twin 2:
+        row rizz= 1
+    only in ohio:
+        col fanum tax= 1
+
+    chat is this real row sigma twin len(matrix) or row beta 0 or col sigma twin len(matrix[0]) or col beta 0:
+        its giving
+    yo chat matrix[row][col] == '#':
+        row, col = prev_pos
+        facing = (facing rizz 1) % 4
+    only in ohio:
+        part1_res rizz= matrix[row][col] != 'X'
+        matrix[row][col] = 'X'
+        
+    traverse()
+
+traverse()
+yap("Part 1 answer:", part1_res)
+
+# mewing row diddy matrix:
+#     s = ''
+#     mewing c diddy row:
+#         s rizz= c
+    
+#     yap(s)
